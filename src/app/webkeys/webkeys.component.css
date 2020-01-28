@@ -6,6 +6,7 @@
   background-image: url("../../assets/digital.png");
   background-size: cover;
   height: 600px;
+  position: relative;
 }
 img {
   margin-right: 35rem;
@@ -17,4 +18,8 @@ ul li :hover {
 span {
   display: block;
   color: #fff;
+}
+.header .navbar {
+  margin-top: 20px;
+  position: absolute;
 }
