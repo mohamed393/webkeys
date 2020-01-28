@@ -1,0 +1,98 @@
+<!--Start Header-->
+<div class="header">
+  <div class="n">
+    <!--Start Navbar-->
+    <nav
+      class="navbar navbar-expand-sm bg-dark navbar-dark justify-content-end"
+    >
+      <!-- Brand/logo -->
+      <a class="navbar-brand" href="#">
+        <img src="../../assets/web.png" alt="logo" style="width:120px;" />
+      </a>
+
+      <!-- Links -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="#">Services</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">About Us</a>
+        </li>
+        <li class="nav-item" class="active">
+          <a class="nav-link" href="#">Contact </a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+  <!--End Navbar-->
+  <!--Start Middle-->
+  <div class="middle" class="row">
+    <div
+      class="left"
+      style="  margin-top:200px;margin-left:60px ;"
+      class="col-5"
+    >
+      <span style="font-size: 20px;">WE</span>
+      <span style="margin-left:10px; font-size: 40px;">ENLIGHT</span>
+      <span style="margin-right: 10px; font-size: 65px;">CORPORATES`</span>
+      <span style="margin-left:20px; font-size: 55px;">FUTURE</span>
+    </div>
+    <div
+      class="col-5"
+      style="margin-top:200px;background-color:#393939; margin-right: 40px;"
+    >
+      <h2 style="color: #EAEAEA;">
+        Strategy Mentoring Workshops
+      </h2>
+      <p style="color: #CACACA;">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti quasi
+        consequuntur tempora ut, adipisci nulla? Repudiandae dolorem laborum,
+        dolores fugiat veniam saepe sapiente consectetur, explicabo, earum quam
+        corporis numquam cupiditate.
+      </p>
+      <button
+        class="btn"
+        style="color: #FFFFFF; background-color: #1272B8; margin-bottom:10px;"
+      >
+        <i class="fa fa-home"></i> Build Your Strategy Today
+      </button>
+    </div>
+  </div>
+  <!--End Middle-->
+</div>
+<!--End Header-->
+<!--Start  We Help Through-->
+<div class="through">
+  <h1 style="text-align: center;">We Help Through We Help Through</h1>
+  <input
+    type="text"
+    class="form-control"
+    #title
+    (keyup.enter)="addTodo(title)"
+    placeholder="Enter Todo Title"
+    style="margin-top: 20px"
+  />
+  <br /><br />
+  <!--Start card-->
+  <div class="row">
+    <ng-container *ngFor="let p of todos; let i = index">
+      <div class="card" style="width: 8rem;">
+        <div class="card-header">
+          <i (click)="deleteTodo(p)"
+            style="margin-left: 80px; color: red;"
+            class="fa fa-times-circle"
+            aria-hidden="true"
+          ></i>
+        </div>
+        <div class="card-body">
+          <h5 class="card-title">{{ p.id }}</h5>
+          <p class="card-text">{{ p.title }}</p>
+        </div>
+      </div>
+      <div *ngIf="(i + 1) % 10 === 0" class="w-100"></div>
+    </ng-container>
+  </div>
+
+  <!--End Card-->
+</div>
+<!--End  We Help Through-->

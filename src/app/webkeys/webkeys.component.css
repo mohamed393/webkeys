@@ -1,0 +1,20 @@
+.navbar-dark {
+  width: 90%;
+}
+
+.header {
+  background-image: url("../../assets/digital.png");
+  background-size: cover;
+  height: 600px;
+}
+img {
+  margin-right: 35rem;
+  height: 30px;
+}
+ul li :hover {
+  background-color: #1272b8;
+}
+span {
+  display: block;
+  color: #fff;
+}
